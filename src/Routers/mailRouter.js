@@ -40,7 +40,7 @@ router.get("/:receiverId/otp" ,(req, res) => {
     const receiverMail = req.params.receiverId
 
     const mailOptions = {
-        from: "shubham@noisy.co.in",
+        from: `"Noisy" <shubham@noisy.co.in>`,
         to: receiverMail,
         subject: "🚨 Your Noisy OTP is Here!",
         html: `
